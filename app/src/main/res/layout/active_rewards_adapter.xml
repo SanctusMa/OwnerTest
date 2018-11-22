@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/active_adapter_item_bg"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/active_adaoter_date"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:text="10-01"
+        android:textColor="@color/trc_font_support_first"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/active_adaoter_des"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="right"
+        android:text="获得0个T币"
+        android:textColor="@color/trc_font_support_first"
+        android:textSize="13dp" />
+</LinearLayout>

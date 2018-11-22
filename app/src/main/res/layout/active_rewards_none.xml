@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/active_rewards_none_close"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:padding="15dp"
+        android:src="@drawable/active_close" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_detail_white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="已获得"
+                    android:textColor="@color/trc_font"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/active_rewards_none_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@null"
+                    android:text="0"
+                    android:textColor="@color/trc_main_attention"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@null"
+                    android:text="个T币"
+                    android:textColor="@color/trc_font"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:text="继续加油哦"
+                android:textColor="@color/trc_font_support_first"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/active_rewards_none_btn"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:background="@null"
+            android:src="@drawable/active_btn_ok" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="110dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/active_get_tb" />
+</FrameLayout>

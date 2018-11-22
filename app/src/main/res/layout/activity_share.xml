@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:clickable="true"
+    android:gravity="bottom"
+    android:onClick="onClick"
+    android:orientation="vertical">
+
+
+    <com.tairanchina.taiheapp.ui.view.CircleAnimationFrame
+        android:id="@+id/animationFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/ShareLinearStyle">
+
+                <FrameLayout
+                    android:id="@+id/wexin"
+                    style="@style/ShareFrameItem">
+
+                    <ImageView
+                        style="@style/ShareImageStyle"
+                        android:src="@drawable/round_img" />
+
+                    <TextView
+                        style="@style/ShareTextStyle"
+                        android:text="微信" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/weixinpengyouquan"
+                    style="@style/ShareFrameItem">
+
+                    <ImageView
+                        style="@style/ShareImageStyle"
+                        android:src="@drawable/round_img" />
+
+                    <TextView
+                        style="@style/ShareTextStyle"
+                        android:text="微信朋友圈" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sina"
+                    style="@style/ShareFrameItem">
+
+                    <ImageView
+                        style="@style/ShareImageStyle"
+                        android:src="@drawable/round_img" />
+
+                    <TextView
+                        style="@style/ShareTextStyle"
+                        android:text="新浪" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/ShareLinearStyle">
+
+                <FrameLayout
+                    android:id="@+id/qq"
+                    style="@style/ShareFrameItem">
+
+                    <ImageView
+                        style="@style/ShareImageStyle"
+                        android:src="@drawable/round_img" />
+
+                    <TextView
+                        style="@style/ShareTextStyle"
+                        android:text="QQ" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/qzone"
+                    style="@style/ShareFrameItem">
+
+                    <ImageView
+                        style="@style/ShareImageStyle"
+                        android:src="@drawable/round_img" />
+
+                    <TextView
+                        style="@style/ShareTextStyle"
+                        android:text="QQ空间" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/clipboard"
+                    style="@style/ShareFrameItem">
+
+                    <ImageView
+                        style="@style/ShareImageStyle"
+                        android:src="@drawable/round_img" />
+
+                    <TextView
+                        style="@style/ShareTextStyle"
+                        android:text="复制" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </com.tairanchina.taiheapp.ui.view.CircleAnimationFrame>
+
+
+</LinearLayout>

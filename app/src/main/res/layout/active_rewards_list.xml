@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/active_rewards_list_close"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:padding="15dp"
+        android:src="@drawable/active_close" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_detail_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="已获得"
+                    android:textColor="@color/trc_font"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/active_rewards_list_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@null"
+                    android:text="0"
+                    android:textColor="@color/trc_main_attention"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@null"
+                    android:text="个T币"
+                    android:textColor="@color/trc_font"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/active_rewards_list_recycleView"
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/active_rewards_list_btn"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:src="@drawable/active_btn_ok" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="130dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/active_get_tb" />
+</FrameLayout>

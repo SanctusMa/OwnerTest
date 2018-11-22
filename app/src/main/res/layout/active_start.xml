@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <ImageView
+        android:id="@+id/startClose"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:padding="15dp"
+        android:src="@drawable/active_close" />
+
+    <king.chengwu.com.chengwuapp.activity_national_day.FormLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        app:base_on_width="true"
+        app:w_h_ratio="1.07">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/active_bg"
+            app:relative_height="1.1"
+            app:relative_left="0"
+            app:relative_top="0.05"
+            app:relative_width="1" />
+
+        <ImageView
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:scaleY="1.018"
+            android:src="@drawable/active_btn_start"
+            app:relative_height="0.2"
+            app:relative_left="0.3"
+            app:relative_top="0.7"
+            app:relative_width="0.4" />
+
+        <Button
+            android:id="@+id/startRules"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/active_custom_btn_bg"
+            android:text="游戏规则"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            app:relative_height="0.09"
+            app:relative_left="0.17"
+            app:relative_top="0.9"
+            app:relative_width="0.28" />
+
+        <Button
+            android:id="@+id/startRewards"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/active_custom_btn_bg"
+            android:text="已获奖励"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            app:relative_height="0.09"
+            app:relative_left="0.57"
+            app:relative_top="0.9"
+            app:relative_width="0.28" />
+    </king.chengwu.com.chengwuapp.activity_national_day.FormLayout>
+
+    <king.chengwu.com.chengwuapp.activity_national_day.FormLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@null"
+        app:base_on_width="true"
+        app:w_h_ratio="0.735">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/active_logo"
+            app:relative_height="0.1275"
+            app:relative_left="0.22"
+            app:relative_top="0.1"
+            app:relative_width="0.55" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/active_theme"
+            app:relative_height="0.32"
+            app:relative_left="0.17"
+            app:relative_top="0.29"
+            app:relative_width="0.7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:relative_height="0.11"
+            app:relative_left="0"
+            app:relative_top="0.65"
+            app:relative_width="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="@null"
+                android:text="15秒内点击"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/active_coin_little" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="注意避开"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/active_bomb" />
+        </LinearLayout>
+    </king.chengwu.com.chengwuapp.activity_national_day.FormLayout>
+</FrameLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="chengwu.com.chengwuapp">
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_SMS"/> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name="king.chengwu.com.chengwuapp.ThApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="king.chengwu.com.chengwuapp.MainActivity"
+            android:theme="@style/MainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="king.chengwu.com.chengwuapp.test.B_Activity" />
+        <activity android:name="king.chengwu.com.chengwuapp.test.C_Activity" />
+        <activity
+            android:name="king.chengwu.com.chengwuapp.finger.FingerPrintActivity"
+            android:launchMode="singleInstance" />
+
+        <activity android:name="king.chengwu.com.chengwuapp.finger.HeiHeiActivity" />
+        <activity
+            android:name="king.chengwu.com.chengwuapp.finger.yeah.MainActivity"
+            android:theme="@style/FingerprintTheme" />
+
+        <activity android:name="king.chengwu.com.chengwuapp.test.ScrollViewActivity" />
+
+        <receiver android:name="king.chengwu.com.chengwuapp.test.TestBroadCastActive">
+            <intent-filter>
+                <action android:name="hehehehehe" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="hahahahaha" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ohohohohoh" />
+            </intent-filter>
+            <intent-filter>`
+                <action android:name="xixixixixi" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="gogogogogo" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
