@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/alarm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ff00ff"
+        android:gravity="center"
+        android:text="alarm"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/alarmRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#27a1e5"
+        android:gravity="center"
+        android:text="repeat"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ff00ff"
+        android:gravity="center"
+        android:text="cancel"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/work"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#27a1e5"
+        android:gravity="center"
+        android:text="work"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:visibility="gone" />
+</LinearLayout>

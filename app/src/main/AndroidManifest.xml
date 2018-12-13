@@ -58,6 +58,12 @@
             android:theme="@style/FingerprintTheme" />
 
         <activity android:name="king.chengwu.com.chengwuapp.test.ScrollViewActivity" />
+        <activity
+            android:name="king.chengwu.com.chengwuapp.test.TransparentScrollActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="king.chengwu.com.chengwuapp.test.AlarmActivity" />
+
+        <service android:name="king.chengwu.com.chengwuapp.test.AlarmService" />
 
         <receiver android:name="king.chengwu.com.chengwuapp.test.TestBroadCastActive">
             <intent-filter>

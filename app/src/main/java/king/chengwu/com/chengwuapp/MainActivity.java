@@ -46,7 +46,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 import chengwu.com.chengwuapp.R;
+import king.chengwu.com.chengwuapp.test.AlarmActivity;
 import king.chengwu.com.chengwuapp.test.ScrollViewActivity;
+import king.chengwu.com.chengwuapp.test.TransparentScrollActivity;
 import king.chengwu.com.chengwuapp.viewgroup.DetailProgressBar;
 
 public class MainActivity extends AppCompatActivity {
@@ -70,6 +72,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ScrollViewActivity.class));
+            }
+        });
+        findViewById(R.id.tv).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TransparentScrollActivity.class));
+            }
+        });
+        findViewById(R.id.tv2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AlarmActivity.class));
             }
         });
 

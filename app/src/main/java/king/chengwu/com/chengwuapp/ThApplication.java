@@ -2,6 +2,7 @@ package king.chengwu.com.chengwuapp;
 
 import android.app.Application;
 import android.content.Context;
+import android.support.multidex.MultiDex;
 
 /**
  * Created by shmyh on 2017/9/14.

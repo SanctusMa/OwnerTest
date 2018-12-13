@@ -77,4 +77,12 @@
     <!-- 当传感器无法处理当前图像时返回错误状态。 -->
     <string name="ErrorUnableToProcess_warning">Error state returned when the sensor was unable to process the current image.</string>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
