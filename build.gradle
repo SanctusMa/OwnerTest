@@ -36,7 +36,7 @@ ext {
     compileSdkVersion = 27
     buildToolsVersion = "27.1.1"
     minSdkVersion = 16
-    targetSdkVersion = 27
+    targetSdkVersion = 21
     appcompatv7 = "com.android.support:appcompat-v7:27.1.1"
     supportv4 = "com.android.support:support-v4:27.1.1"
     jUnit = "junit:junit:4.12"
@@ -44,6 +44,7 @@ ext {
     supportdesign = "com.android.support:design:27.1.1"
     supportannotation = 'com.android.support:support-annotations:27.1.1'
     constraintlayout = 'com.android.support.constraint:constraint-layout:1.1.2'
+    gson = 'com.google.code.gson:gson:2.7'
 }
 
 task clean(type: Delete) {

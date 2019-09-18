@@ -14,7 +14,7 @@ public class TestBroadCast extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, this.getClass().getName(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "TestBroadCast", Toast.LENGTH_SHORT).show();
         Log.e(this.getClass().getName(), this.getClass().getName());
     }
 }

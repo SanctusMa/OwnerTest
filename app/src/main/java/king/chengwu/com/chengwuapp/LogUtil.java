@@ -16,4 +16,14 @@ public class LogUtil {
     public static void e(String e) {
         Log.e(CHENG_WU_LOG_TAG, e);
     }
+
+    public static void i(Throwable e) {
+        Log.i(CHENG_WU_LOG_TAG, e.toString());
+    }
+
+    public static void i(String e) {
+        Log.i(CHENG_WU_LOG_TAG, e);
+    }
+
+
 }

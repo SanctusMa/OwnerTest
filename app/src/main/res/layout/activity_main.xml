@@ -65,6 +65,7 @@
         android:id="@+id/tv4"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="@drawable/shadow_test"
         android:gravity="center"
         android:text="tv4" />
 
@@ -81,15 +82,26 @@
         android:background="#f25a2b" />
 
     <king.chengwu.com.chengwuapp.viewgroup.DetailProgressBar
+        android:id="@+id/progressBarCustom"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/progress_bar" />
+
+    <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="match_parent"
-        android:layout_height="19dp"
-        android:layout_marginTop="10dp"
-        android:background="#50f25a2b" />
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_bar" />
 
     <WebView
         android:id="@+id/mainWebview"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:background="#15f25a2b" />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shadow_test" />
 </LinearLayout>

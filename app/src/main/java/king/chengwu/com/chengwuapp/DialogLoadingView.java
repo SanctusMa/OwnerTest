@@ -1,7 +1,7 @@
 package king.chengwu.com.chengwuapp;
 
+import android.app.Activity;
 import android.app.Dialog;
-import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Binder;
@@ -16,23 +16,25 @@ import chengwu.com.chengwuapp.R;
 
 public class DialogLoadingView extends Dialog {
     private Runnable runnable = null;
+    public Activity context;
 
-    public DialogLoadingView(Context context) {
+    public DialogLoadingView(Activity context) {
         super(context, R.style.CommonLoadingDialogStyle);
-        init(context);
+        this.context = context;
+        init();
     }
 
-    public DialogLoadingView(Context context, Runnable runnable) {
+    public DialogLoadingView(Activity context, Runnable runnable) {
         super(context, R.style.CommonLoadingDialogStyle);
         this.runnable = runnable;
-        init(context);
+        init();
     }
 
     public Runnable getRunnable() {
         return runnable;
     }
 
-    private void init(final Context context) {
+    private void init() {
 //        this.setCancelable(false);
         View dialog = LayoutInflater.from(context).inflate(R.layout.dialog_circle_loading, null);
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
